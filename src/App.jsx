@@ -158,7 +158,7 @@ function App() {
               <a className="cv-link" href="/assets/Smitha_P_Antony_Resume_Team_Lead.pdf" download>
                 <Icon name="file" size={12} /> Download Technical CV (PDF · 121 KB)
               </a>
-              <section id="contact" className="contact-card">
+              <div id="contact" className="contact-details">
                 <div className="contact-status">
                   <span><i /> +91 9847766315</span>
                 </div>
@@ -166,7 +166,7 @@ function App() {
                 <a className="button button-primary" href="mailto:smithafebinkal20.20@gmail.com">
                   Email Me
                 </a>
-              </section>
+              </div>
             </article>
 
             <div className="intro-aside">

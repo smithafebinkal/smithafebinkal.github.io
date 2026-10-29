@@ -52,7 +52,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 main { padding: 32px 24px 72px; }
 .page-shell { width: min(100%, 1120px); margin: 0 auto; }
 .intro-grid { display: grid; grid-template-columns: minmax(330px, .9fr) minmax(400px, 1.1fr); gap: 24px; align-items: stretch; }
-.profile-card, .stat-card, .project-card, .contact-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.profile-card, .stat-card, .project-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; }
 .profile-card { padding: 20px; background: linear-gradient(150deg, #f0f9ff 0%, #fff 58%); }
 .profile-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
 .portrait { width: 86px; height: 86px; border-radius: 12px; overflow: hidden; position: relative; background: linear-gradient(145deg, #152c3c, #06121d 68%); border: 1px solid #dfe8ef; box-shadow: 0 10px 24px rgba(20, 35, 52, .08); }
@@ -138,12 +138,11 @@ h1 { font-size: clamp(28px, 3.2vw, 37px); letter-spacing: -.045em; line-height: 
 .project-content { padding: 9px; }
 .project-content h3 { margin: 0 0 5px; font-size: 11px; letter-spacing: -.015em; font-weight: 600; }
 .project-description { margin: 0; color: #647287; font-size: 8px; line-height: 1.45; }
-.contact-card { margin: 10px 0 0; padding: 12px 14px; background: linear-gradient(145deg, #f1fff9, #fff); border-color: #cce9df; }
+.contact-details { margin-top: 10px; }
 .contact-status { display: flex; justify-content: space-between; align-items: center; margin-bottom: 11px; color: #607289; font: 8px var(--mono); letter-spacing: .08em; }
 .contact-status span:first-child { text-transform: uppercase; color: #087e69; display: inline-flex; gap: 6px; align-items: center; }
-.contact-card h2 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
-.contact-card p { margin: 0 0 13px; color: #617187; font-size: 11px; line-height: 1.55; }
-.contact-card .button { min-height: 36px; width: 100%; }
+.contact-details p { margin: 0 0 13px; color: #617187; font-size: 11px; line-height: 1.55; }
+.contact-details .button { min-height: 36px; width: 100%; }
 .bottom-nav { display: none; }
 
 @media (max-width: 760px) {
@@ -193,12 +192,11 @@ h1 { font-size: clamp(28px, 3.2vw, 37px); letter-spacing: -.045em; line-height: 
   .project-content { padding: 7px; }
   .project-content h3 { margin-bottom: 4px; font-size: 10px; }
   .project-description { font-size: 8px; line-height: 1.4; }
-  .contact-card { margin-top: 8px; padding: 10px 9px; border-radius: 9px; }
+  .contact-details { margin-top: 8px; }
   .contact-status { margin-bottom: 8px; font-size: 6px; }
   .contact-status i { width: 5px; height: 5px; }
-  .contact-card h2 { margin-bottom: 5px; font-size: 11px; }
-  .contact-card p { margin-bottom: 9px; font-size: 8px; line-height: 1.5; }
-  .contact-card .button { min-height: 26px; }
+  .contact-details p { margin-bottom: 9px; font-size: 8px; line-height: 1.5; }
+  .contact-details .button { min-height: 26px; }
   .bottom-nav { position: fixed; display: grid; grid-template-columns: repeat(4, 1fr); left: 0; right: 0; bottom: 0; z-index: 6; padding: 7px max(12px, calc((100vw - 520px) / 2)) max(7px, env(safe-area-inset-bottom)); border-top: 1px solid #e0e6ed; background: rgba(255, 255, 255, .96); backdrop-filter: blur(14px); }
   .bottom-nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #718098; font: 7px var(--mono); }
   .bottom-nav a.active, .bottom-nav a:hover { color: #087fce; }
